@@ -22,7 +22,7 @@ ReserveMate is an AI-powered restaurant reservation system designed to streamlin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CodingBad02/ReserveMate.git
+   git clone https://github.com/SriHarshitha88/Reserve-Mate.git
    cd ReserveMate
    ```
 
@@ -99,9 +99,9 @@ Do any of these catch your interest?"
 
 **ReserveMate**: "Great choice! The Maharaja Club offers a royal dining experience with live music on Saturdays. To confirm your reservation for 4 people this Saturday at 8 PM, I'll need your name and a contact number or email."
 
-**User**: "My name is Raj Kumar, phone number is 9876543210."
+**User**: "My name is xyz, phone number is 9876543210."
 
-**ReserveMate**: "Thanks, Raj! I've confirmed your reservation at The Maharaja Club for 4 guests this Saturday at 8 PM. Your booking ID is FS042. You'll receive a confirmation SMS shortly. Is there anything else you'd like to know about the restaurant before your visit?"
+**ReserveMate**: "Thanks, xyz! I've confirmed your reservation at The Maharaja Club for 4 guests this Saturday at 8 PM. Your booking ID is FS042. You'll receive a confirmation SMS shortly. Is there anything else you'd like to know about the restaurant before your visit?"
 
 ### Booking Modification Journey
 
