@@ -9,6 +9,7 @@ ReserveMate is an AI-powered restaurant reservation system designed to streamlin
 - [Example Conversations](#example-conversations)
 - [Business Strategy](#business-strategy)
 - [Feature Roadmap](#feature-roadmap)
+  
 
 ## Setup Instructions
 
