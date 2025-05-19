@@ -1,0 +1,8 @@
+# Credentials
+.env
+
+#Hardcoded Restaurants
+restaurants.json
+
+#Cache
+__pycache__/
