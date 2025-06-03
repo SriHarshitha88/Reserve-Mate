@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Spice Garden",
+        "city": "Bangalore",
+        "city_area": "Indiranagar",
+        "cuisine_type": "North Indian",
+        "seating_capacity": 50,
+        "average_price_per_diner_inr": 1200,
+        "special_features": ["Live Music", "Outdoor Seating", "Bar"]
+    },
+    {
+        "id": 2,
+        "name": "Coastal Delights",
+        "city": "Mumbai",
+        "city_area": "Bandra",
+        "cuisine_type": "Seafood",
+        "seating_capacity": 40,
+        "average_price_per_diner_inr": 1500,
+        "special_features": ["Sea View", "Private Dining"]
+    },
+    {
+        "id": 3,
+        "name": "Royal Spice",
+        "city": "Delhi",
+        "city_area": "Connaught Place",
+        "cuisine_type": "Mughlai",
+        "seating_capacity": 60,
+        "average_price_per_diner_inr": 2000,
+        "special_features": ["Royal Ambience", "Live Cooking"]
+    }
+] 
