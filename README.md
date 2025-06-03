@@ -137,4 +137,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - All contributors and supporters
 
 ---
-Made with ❤️ by FoodieSpot Team
+
