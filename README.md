@@ -131,9 +131,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
-- Sri Harshitha - Initial work
-
 ## 🙏 Acknowledgments
 - Streamlit team for the amazing framework
 - Groq for the LLM API
