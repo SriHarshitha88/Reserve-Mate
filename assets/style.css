@@ -1,247 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
-/* Main Styles */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* ── TITLE ── */
-h1 {
-  font-family: 'Montserrat', sans-serif !important;
-  text-align: center;
-  color: #D32F2F;
-  margin: 10px 0 20px !important;
-  font-size: 2em;
-}
-
-/* Chat Container */
-.stChatMessage {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* User Message */
-.stChatMessage[data-testid="user-message"] {
-  background-color: #e3f2fd;
-}
-
-/* Assistant Message */
-.stChatMessage[data-testid="assistant-message"] {
-  background-color: #f5f5f5;
-}
-
-/* Booking Card */
-.booking-card {
-  background-color: white;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.booking-card h4 {
-  color: #1976d2;
-  margin-bottom: 0.5rem;
-}
-
-/* Status Tags */
-.status-confirmed {
-  color: #2e7d32;
-  font-weight: 500;
-}
-
-.status-cancelled {
-  color: #c62828;
-  font-weight: 500;
-}
-
-.status-pending {
-  color: #f57c00;
-  font-weight: 500;
-}
-
-/* Input Area */
-.stTextInput > div > div > input {
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-}
-
-/* Buttons */
-.stButton > button {
-  border-radius: 20px;
-  background-color: #1976d2;
-  color: white;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  transition: background-color 0.3s;
-}
-
-.stButton > button:hover {
-  background-color: #1565c0;
-}
-
-/* Sidebar */
-.sidebar .sidebar-content {
-  background-color: white;
-}
-
-/* Main Content */
-.main .block-container {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main .block-container {
-    padding: 1rem;
-  }
-}
-
-/* ── GENERAL ── */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f0f2f6;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* ── CHAT MESSAGES ── */
-div[data-testid="stChatMessage"] {
-  border-radius: 12px;
-  padding: 12px 18px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-  max-width: 70%;
-  word-wrap: break-word;
-}
-div[data-testid="stChatMessage"][role="user"] {
-  background-color: #FF4B4B;
-  color: #fff;
-  margin-left: auto;
-  border-bottom-right-radius: 0;
-}
-div[data-testid="stChatMessage"][role="assistant"] {
-  background-color: #fff;
-  color: #333;
-  margin-right: auto;
-  border: 1px solid #e0e0e0;
-  border-bottom-left-radius: 0;
-}
-div[data-testid="stChatMessage"] .stMarkdown p,
-div[data-testid="stChatMessage"] .stMarkdown ul,
-div[data-testid="stChatMessage"] .stMarkdown li,
-div[data-testid="stChatMessage"] span,
-div[data-testid="stChatMessage"] code {
-  color: inherit;
-}
-
-/* ── CHAT INPUT ── */
-div[data-testid="stChatInputContainer"] {
-  border-top: 1px solid #ddd;
-  padding: 10px 15px;
-  background-color: #fff;
-}
-div[data-testid="stChatInputContainer"] textarea,
-div[data-testid="stChatInputContainer"] input {
-  color: #333 !important;
-  background-color: #fff !important;
-}
-div[data-testid="stChatInputContainer"] textarea::placeholder,
-div[data-testid="stChatInputContainer"] input::placeholder {
-  color: #888 !important;
-}
-
-/* ── FULL-HEIGHT, FULL-WHITE SIDEBAR ── */
-/* 1) Paint the root sidebar container white */
-section[data-testid="stSidebar"] {
-    background-color: #ffffff !important;
-  }
-  
-  /* 2) Make its inner wrapper fill the viewport vertically */
-  section[data-testid="stSidebar"] > div:first-child {
-    min-height: 100vh !important;
-    padding-top: 0 !important;
-  }
-  
-  /* 3) Also force the nav strip (where the "X" lives) to white */
-  div[data-testid="stSidebarNav"] {
-    background-color: #ffffff !important;
-    box-shadow: none !important;
-  }
-
-/* ── REMOVE SIDEBAR TOP GAP ── */
-div[data-testid="stSidebarNav"] {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-}
-
-
-/* ── SIDEBAR CONTENT ── */
-div[data-testid="stSidebarUserContent"] {
-  background-color: #fff;
-  padding: 20px 15px 10px !important;
-  border-right: 1px solid #e0e0e0;
-}
-div[data-testid="stSidebarUserContent"] img {
-  display: block;
-  margin: 0 auto 10px;
-}
-div[data-testid="stSidebarUserContent"] h2,
-div[data-testid="stSidebarUserContent"] h3 {
-  color: #D32F2F;
-  margin: 10px 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #f0f2f6;
-}
-
-/* ── SIDEBAR "X" BUTTON ── */
-div[data-testid="stSidebarNav"] button {
-  /* make the X dark */
-  color: #000000 !important;
-  background: none !important;
-  border: none !important;
-}
-div[data-testid="stSidebarNav"] button:hover {
-  background-color: #f5f5f5 !important;
-}
-div[data-testid="stSidebarNav"] button svg {
-  /* the SVG icon inside the button */
-  fill: #333333 !important;
-}
-
-/* ── EXPANDER HEADER ── */
-.stExpander > header {
-  /* header background is already light; force its text dark */
-  color: #333333 !important;
-}
-.stExpander > header button {
-  /* the clickable part inside header */
-  color: #333333 !important;
-}
-.stExpander > header svg {
-  /* arrow icon */
-  fill: #333333 !important;
-}
-
-/* ── EXPANDER ── */
-.stExpander {
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #fff;
-}
-.stExpander header {
-  background-color: #f7f7f7;
-  padding: 8px 12px;
-}
-.stExpander div[data-testid="stVerticalBlock"] {
-  padding: 10px;
-}
+[
+    {
+        "id": 1,
+        "name": "Spice Garden",
+        "city": "Bangalore",
+        "city_area": "Indiranagar",
+        "cuisine_type": "North Indian",
+        "seating_capacity": 50,
+        "average_price_per_diner_inr": 1200,
+        "special_features": ["Live Music", "Outdoor Seating", "Bar"]
+    },
+    {
+        "id": 2,
+        "name": "Coastal Delights",
+        "city": "Mumbai",
+        "city_area": "Bandra",
+        "cuisine_type": "Seafood",
+        "seating_capacity": 40,
+        "average_price_per_diner_inr": 1500,
+        "special_features": ["Sea View", "Private Dining"]
+    },
+    {
+        "id": 3,
+        "name": "Royal Spice",
+        "city": "Delhi",
+        "city_area": "Connaught Place",
+        "cuisine_type": "Mughlai",
+        "seating_capacity": 60,
+        "average_price_per_diner_inr": 2000,
+        "special_features": ["Royal Ambience", "Live Cooking"]
+    }
+] 
