@@ -1,4 +1,4 @@
-#Imports
+
 import os
 import json
 from groq import Groq
@@ -21,7 +21,8 @@ if not API_KEY:
 
 
 client = Groq(api_key=API_KEY)
-MODEL = 'llama3-8b-8192' 
+# Using the recommended replacement model from Groq
+MODEL = 'mixtral-8x7b-32768'
 
 def get_llm_response_with_tools(messages_history, tools_schemas=None):
     """
